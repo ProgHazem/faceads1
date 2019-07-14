@@ -1,0 +1,291 @@
+<!doctype html>
+<!--[if IE 9]> <html class="no-js ie9 fixed-layout" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js " lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Site Meta -->
+    <title>WAKEB</title>
+    <meta name="keywords" content="AI">
+    <meta name="description" content="AI Wakeb">
+    <meta name="author" content="Wakeb">
+    
+    <!-- Site Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='images/siteicons/apple-icon-57x57.png')}}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='images/siteicons/apple-icon-60x60.png')}}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='images/siteicons/apple-icon-72x72.png')}}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='images/siteicons/apple-icon-76x76.png')}}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='images/siteicons/apple-icon-114x114.png')}}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='images/siteicons/apple-icon-120x120.png')}}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='images/siteicons/apple-icon-144x144.png')}}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='images/siteicons/apple-icon-152x152.png')}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/siteicons/apple-icon-180x180.png')}}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ url_for('static', filename='images/siteicons/android-icon-192x192.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/siteicons/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='images/siteicons/favicon-96x96.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/siteicons/favicon-16x16.png')}}">
+    <link rel="manifest" href="{{ url_for('static', filename='images/siteicons/manifest.json')}}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ url_for('static', filename='images/siteicons/ms-icon-144x144.png')}}">
+    <meta name="theme-color" content="#ffffff">
+
+	<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet"> 
+	
+    <!-- Custom & Default Styles -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+
+	<!--[if lt IE 9]>
+		<script src="{{ url_for('static', filename='js/vendor/html5shiv.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='js/vendor/respond.min.js')}}"></script>
+	<![endif]-->
+
+</head>
+<body>  
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <img class="preloader" src="{{ url_for('static', filename='images/loader.gif')}}" alt="Loading . . . ">
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+
+    <div id="wrapper">
+        <header class="header">
+            <div class="topbar clearfix">
+                <div class="container">
+                    <div class="row-fluid">
+                        <div class="col-md-6 col-sm-6 text-left">
+                            <p>
+                                <strong><i class="fa fa-phone"></i></strong> <a href="tel:+966537861951">+96 653 786 19 51</a> &nbsp;&nbsp;
+                                <strong><i class="fa fa-envelope"></i></strong> <a href="mailto:info@wakeb.tech">info@wakeb.tech</a>
+                            </p>
+                        </div><!-- end left -->
+                        <div class="col-md-6 col-sm-6 hidden-xs text-right">
+                            <div class="social">
+                                <a class="facebook" href="#" data-tooltip="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>              
+                                <a class="twitter" href="#" data-tooltip="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+                                <a class="google" href="#" data-tooltip="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+                                <a class="linkedin" href="#" data-tooltip="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                                <a class="pinterest" href="#" data-tooltip="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                            </div><!-- end social -->
+                        </div><!-- end left -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end topbar -->
+
+            <div class="container">
+                <nav class="navbar navbar-default yamm">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="logo-normal">
+                            <a class="navbar-brand" href="index.html"><img src="{{ url_for('static', filename='images/logo.png')}}" alt="Logo"></a>
+                        </div>
+                    </div>
+                </nav><!-- end navbar -->
+            </div><!-- end container -->
+        </header>
+        <section id="home" class="video-section js-height-full">
+            <div class="overlay"></div>
+            <div class="home-text-wrapper relative container">
+                <div class="home-message">
+                   <div class="row">
+                       <div class="col-xs-4 col-sm-3">
+                           <h3 class="text-center">Your Image</h3>
+                           <div class="divcontainer img-responsive img-thumbnail">
+                               <video  onplay="onPlay(this)" id="inputVideo" autoplay muted ></video>
+                               <canvas id="overlay"/>
+                           </div>
+                       </div>
+                       <div class="col-xs-8 col-sm-4 col-sm-push-5">
+                           <div class="choice">
+                               <h4 class="text-center"><button id="snap" class="btn btn-default wow slideInRight">اضغط هنالفتح الكاميرا&nbsp;<i class="fa fa-camera"></i> </button></h4>
+                               <h4 class="text-center">Your Choice</h4>
+                               <div class="radio">
+                                   <label>
+                                       <input type="radio" name="model" value="gender" />الجنس
+                                   </label>
+                               </div>
+                               <div class="radio">
+                                   <label>
+                                       <input type="radio" name="model" value="look" />هل تبدو كشخص مشهور
+                                   </label>
+                               </div>
+                               <div class="radio">
+                                   <label>
+                                       <input type="radio" name="model" value="glass" />النظارات
+                                   </label>
+                               </div>
+                               <div class="radio">
+                                   <label>
+                                       <input type="radio" name="model" value="Receding_Hairline" />الصلع الخفيف
+                                   </label>
+                               </div>
+                               <div class="radio">
+                                   <label>
+                                       <input type="radio" name="model" value="Bags_Under_Eyes" />الاكياس الدهنية تحت العين
+                                   </label>
+                               </div>
+                               <div class="radio">
+                                   <label>
+                                       <input type="radio" name="model" value="Bald" />الصلع
+                                   </label>
+                               </div>
+                               <div class="radio">
+                                   <label>
+                                       <input type="radio" name="model" value="Young" />هل أنت شاب؟
+                                   </label>
+                               </div>
+                               <div class="radio">
+                                   <label>
+                                       <input type="radio" name="model" value="Pale_Skin" />هل يبدو لونك باهتا
+                                   </label>
+                               </div>
+                               <h4 class="text-center"><button id="play" class="btn btn-success wow slideInRight">اضغط هنابعد فتح الكاميرا لتشغيل النموذج</button></h4>
+                           </div>
+                       </div>
+                       <div class="col-xs-12 col-sm-5 col-sm-pull-4 text-center">
+                           <p>توجيه الإعلانات بإستخدام طرق الذكاء الإصطناعي</p>
+                           <small>أحد مشاريع واكب</small>
+                           <hr />
+                           <h3 id="results">النتيجة تظهر هنا</h3>
+                           <h4 id="accuracy">نسبة الدقة تظهر هنا</h4>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="copyrights">
+            <div class="container">
+                <div class="clearfix">
+                    <div class="pull-left col-xs-6">
+                        <div class="cop-logo">
+                            <a href="#"><img src="{{ url_for('static', filename='images/logo.png')}}" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="pull-right col-xs-6">
+                        <div class="footer-links">
+                            <ul class="list-inline">
+                                <li>All CopyRight &copy; Reserved To  <a href="#">Wakeb</a> 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </div><!-- end copy -->
+    </div><!-- end wrapper -->
+
+
+    <script src="{{ url_for('static', filename='js/face-api.js')}}"></script>
+    <script>
+        $(document).ready(function() {
+            faceapi.tf.ENV.set('WEBGL_PACK', false)
+
+        })
+        const videoEl = document.getElementById('inputVideo')
+        const canvas = document.getElementById('overlay')
+
+        async function run() {
+            faceapi.loadTinyFaceDetectorModel('https://www.rocksetta.com/tensorflowjs/saved-models/face-api-js/')
+            const stream = await navigator.mediaDevices.getUserMedia({ video: true })
+            videoEl.srcObject = stream;
+
+        }
+        function resizeCanvasAndResults(dimensions, canvas, results) {
+            const { width, height } = dimensions instanceof HTMLVideoElement
+                ? faceapi.getMediaDimensions(dimensions)
+                : dimensions
+            return results.map(res => res)
+        };
+
+
+        function drawDetections(dimensions, canvas, results) {
+
+        };
+        async function onPlay(videoEl) {
+
+            const options = new faceapi.TinyFaceDetectorOptions({ inputSize: 416, scoreThreshold: 0.2 })
+
+            var result = await faceapi.detectSingleFace(videoEl, options)
+
+            console.log(result)
+
+            if (result) {
+                const resizedResults = resizeCanvasAndResults(videoEl, canvas, [result])
+                console.log("resizedresults")
+                console.log(resizedResults)
+                cropped_box = resizedResults.map(resizedResults => resizedResults.box)
+                dim_x = Math.round(cropped_box.map(box => box.x))
+                dim_y = Math.round(cropped_box.map(box => box.y))
+                dim_width = Math.round(cropped_box.map(box => box.width))
+                dim_height = Math.round(cropped_box.map(box => box.height))
+                var crop = {
+                    top :  Math.max((dim_y - 55),0),
+                    left : dim_x ,
+                    width : dim_width + 20,
+                    height : dim_height + 50
+                }
+                var ctx = canvas.getContext("2d");
+                console.log([ctx,crop.top,crop.left])
+                canvas.width = 128
+                canvas.height = 128
+                ctx.drawImage(videoEl, crop.left, crop.top, crop.width, crop.height, 0, 0, 128, 128);
+                send_canvas_ctx();
+            }
+            else {
+                console.log("else")
+                setTimeout(() => onPlay(videoEl),200)
+            }
+        document.getElementById("snap").addEventListener("click", function() {
+            run()
+        });
+        document.getElementById("play").addEventListener("click", function() {
+            onPlay(videoEl)
+        });
+
+        function send_canvas_ctx() {
+            var selected_model = document.querySelector('input[name="model"]:checked').value;
+            console.log(selected_model)
+            input_data = canvas.toDataURL('image/png');
+            window.fetch('/snap_a_signal', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    data: input_data,
+                    selected_model: selected_model
+                })
+            }).then((response) => response.json()).then((json) => {
+                document.getElementById('results').innerHTML = json["results"]
+                document.getElementById('accuracy').innerHTML = json["accuracy"]
+
+                console.log("else2")
+                //const videoEl = document.getElementById('inputVideo')
+                onPlay(videoEl)
+            });
+
+    </script>
+    <!-- jQuery Files -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js)'}}"></script>
+    <script src="{{ url_for('static', filename='js/animate.js)'}}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js')}}"></script>
+</body>
+</html>
